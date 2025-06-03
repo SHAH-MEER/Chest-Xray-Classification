@@ -62,7 +62,8 @@ iface = gr.Interface(
     outputs=gr.Label(num_top_classes=2),
     title="Pneumonia Detection from X-ray",
     examples=examples,
-    description="Upload a chest X-ray image and the model will predict Normal or Pneumonia with confidence."
+    description="Upload a chest X-ray image and the model will predict Normal or Pneumonia with confidence.",
+    theme=gr.themes.Soft()
 )
 
 iface.launch()
