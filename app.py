@@ -52,11 +52,16 @@ def predict_image(img):
     return {classes[pred_idx.item()]: conf.item()}
 
 # Gradio Interface
+examples = [
+    'examples/normal.jpeg'
+    'examples/infection.jpeg'
+]
 iface = gr.Interface(
     fn=predict_image,
     inputs=gr.Image(type='pil'),
     outputs=gr.Label(num_top_classes=2),
     title="Pneumonia Detection from X-ray",
+    examples=examples,
     description="Upload a chest X-ray image and the model will predict Normal or Pneumonia with confidence."
 )
 
