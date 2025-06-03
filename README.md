@@ -1,6 +1,6 @@
 # Chest X-ray Classification with DenseNet-121
 
-![Project Banner](https://user-images.githubusercontent.com/SHAH-MEER/project-banner.png)
+![Project Banner](project-banner.png)
 
 ---
 
